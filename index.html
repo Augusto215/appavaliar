@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Imagens</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <style>
+        *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.form-group
+{
+    text-align: center;
+   
+}
+    </style>
+    <div style="margin:auto">
+
+    <div class="container p-3 avaliador">
+
+        <img style="max-height:  5rem; max-width: 90%;" src="/img/logo__2_-removebg-preview (1).png">
+
+            <p style="margin-top: 1rem; text-align: center;">
+                Olá, BEM-VINDO 
+
+                Utilize o seu CPF utilizado na compra <br>
+                 para acessar o aplicativo
+            </p>
+            <div class="form-group">
+                <label for="valor">Seu C.P.F:</label>
+                <input id="cpf" type="text" class="form-control" id="valor" placeholder="Insira o C.P.F">
+            </div>
+           
+            <a href="home.html"><button style="width:100%; background-color: rgb(62, 0, 90); border: none; box-shadow: 2px 2px 5px #00000041;" class="btn btn-primary">
+                Enviar
+            </button>
+        </a> 
+      
+
+    </div>
+
+</div>
+
+
+    <script src="/assets/js/home.js"></script>
+    <script>
+        $(document).ready(function(){
+  $('#cpf').mask('000.000.000-00', {reverse: true});
+});
+
+    </script>
+    
+</body>
+</html>
